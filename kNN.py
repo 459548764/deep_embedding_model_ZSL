@@ -37,7 +37,7 @@ def kNNClassify(newInput, dataSet, labels, k):
     sortedDistIndices = argsort(distance)  
   
     classCount = {} # define a dictionary (can be append element)  
-    for i in xrange(k):  
+    for i in range(k):  
         ## step 3: choose the min k distance  
         voteLabel = labels[sortedDistIndices[i]]  
   
